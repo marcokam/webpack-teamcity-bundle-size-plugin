@@ -2,9 +2,6 @@
 
 A webpack plugin that reports individual bundle sizes to TeamCity using buildStatisticValue service messages.
 
-## Requirements
-* NodeJs 4+
-
 ## To Install
 
 In your project run a npm install command:
@@ -35,7 +32,7 @@ The plugin will only output messages if `TEAMCITY_VERSION` is present.  You can 
 
 `export TEAMCITY_VERSION="your_version"`
 
-If you have this environment variable set locally, running your webpack build output TeamCity service messages:
+If you have this environment variable set locally, running your webpack build will output TeamCity service messages:
 
 ```
 ##teamcity[buildStatisticValue key='app.js' value='40241']
