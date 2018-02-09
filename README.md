@@ -20,7 +20,7 @@ In the plugins section of your config, add a new instance of this plugin:
 {
     ...
     plugins: [
-        new WebpackBundleSizeAnalyzerPlugin('./reports/plain-report.txt')
+        new WebpackBundleSizeAnalyzerPlugin()
     ]
     ...
 }
