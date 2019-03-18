@@ -6,7 +6,7 @@ const path = require("path");
 const defaultLogger = {
     done: stats => {
         // Only run this if on Team City
-        if (process.env && !process.env.TEAMCITY_VERSION) {
+        if (path.dirname.indexOf('BuildAgent') === -1) {
             return;
         }
         const { assetsByChunkName, assets } = stats.toJson();
